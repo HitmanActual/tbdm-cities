@@ -19,6 +19,7 @@ class CreateCitiesTable extends Migration
             $table->string('city_name');
             $table->string('city_name_en');
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
